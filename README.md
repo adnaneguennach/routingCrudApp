@@ -1,8 +1,21 @@
-# React + Vite
+# CRUD App with Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic CRUD (Create, Read, Update, Delete) application built using React with routing implemented through React Router. The app allows users to view, create, update, and delete items from a list of tasks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **View Tasks:** See a list of all tasks.
+- **Add Task:** Add a new task to the list.
+- **Update Task:** Edit details of an existing task.
+- **Delete Task:** Remove a task from the list.
+- **Routing:** Each task operation (view, add, update, delete) is accessed via specific routes.
+
+## Technologies Used
+
+- **React**: Frontend framework
+- **React Router**: For client-side routing
+- **Vite**: Development environment
+- **Tailwind CSS**: Styling framework
+
+## Folder Structure
+
