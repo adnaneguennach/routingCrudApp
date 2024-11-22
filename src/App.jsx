@@ -17,13 +17,15 @@ export default function App() {
         console.log(data)
     };
 
-    
+    const deleteFnc = (id) =>{
+        setData(prev=>prev.filter((e,i)=> e.taskName !== id))
+    }
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Create addData={addData} />} />
                 <Route path="/update/:id" element={<Update update={update} data={data} />} />
-                <Route path="/delete/:id" element={<Delete deleter={setData} />} />
+                <Route path="/delete/:id" element={<Delete deleteFnc={deleteFnc} />} />
                 <Route path="/list" element={<List data={data} />} />
             </Routes>
         </BrowserRouter>
